@@ -11,7 +11,7 @@ defined('WEBROOT') || define('WEBROOT', str_replace($_SERVER['SCRIPT_NAME'], '',
 // Folder where Munee is located
 defined('MUNEE_FOLDER') || define('MUNEE_FOLDER', dirname(__DIR__));
 // Define the cache path
-defined('MUNEE_CACHE') || define('MUNEE_CACHE', MUNEE_FOLDER . DS . 'cache');
+defined('MUNEE_DEFAULT_CACHE') || define('MUNEE_DEFAULT_CACHE', MUNEE_FOLDER . DS . 'cache');
 // Define default character encoding
 defined('MUNEE_CHARACTER_ENCODING') || define('MUNEE_CHARACTER_ENCODING', 'UTF-8');
 

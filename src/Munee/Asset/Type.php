@@ -103,7 +103,7 @@ abstract class Type
         // Parse the raw params based on a map of allowedParams for those filters
         $this->request->parseParams($allowedParams);
 
-        $this->cacheDir = MUNEE_CACHE . DS . $assetShortName;
+        $this->cacheDir = defined("MUNEE_CACHE")? MUNEE_CACHE . DS . $assetShortName : MUNEE_DEFAULT_CACHE . DS . $assetShortName;
 
         $optionsKey = strtolower($assetShortName);
         // Set the AssetType options if someone were passed in through the Request Class
